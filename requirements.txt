@@ -1,5 +1,5 @@
 streamlit
 openai
-whisper
 pydub
 ffmpeg-python
+git+https://github.com/openai/whisper.git
