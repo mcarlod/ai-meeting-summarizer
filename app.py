@@ -2,7 +2,6 @@ import streamlit as st
 import tempfile
 import whisper
 import openai
-from io import StringIO
 
 st.set_page_config(page_title="AI Meeting Summarizer", layout="centered")
 
@@ -71,5 +70,5 @@ if uploaded_file:
     with st.expander("📄 Full Transcript"):
         st.text_area("", transcript, height=300)
 
-    summary_file = StringIO(summary)
+    summary_file = summary.encode("utf-8")
     st.download_button("📥 Download Summary", summary_file, file_name="summary.txt")
