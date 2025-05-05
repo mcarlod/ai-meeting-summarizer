@@ -4,7 +4,7 @@ import whisper
 import openai
 import os
 
-openai.api_key = st.secrets["openai_api_key"]
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 @st.cache_resource
 def load_model():
