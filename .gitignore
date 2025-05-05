@@ -1,0 +1,21 @@
+# Ignores Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignores virtual environments
+venv/
+.env/
+
+# Ignores Streamlit secrets (for local dev only)
+.streamlit/secrets.toml
+
+# Ignores OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignores temporary files
+*.log
+*.tmp
+*.swp
